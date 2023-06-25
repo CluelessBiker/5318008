@@ -8,7 +8,6 @@ let isLightTheme = true;
  * Switch themes
  */
 const switchTheme = () => {
-	console.log("switching theme...");
 	const themeStyleSheet = document.getElementById("themeStyleSheet");
 
 	const newStyleSheet = isLightTheme
