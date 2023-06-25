@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link id="themeStyleSheet" rel="stylesheet" href="assets/css/light.css" />
+		<title>5318008</title>
+	</head>
+	<body>
+		<div class="pageContainer">
+			<button id="themeButton" value="true">
+				<i class="fa-solid fa-moon"></i>
+			</button>
+
+			<div class="mainCont">
+				<!-- SCREEN : -->
+				<div class="screen">
+					<p id="prevNum"></p>
+					<p id="currentNum"></p>
+				</div>
+
+				<div class="numActionsCont">
+					<!-- NUMBERS : -->
+					<div class="leftCont">
+						<div id="numBtnCont">
+							<button class="btn num order"></button>
+						</div>
+
+						<!-- ACTIONS : delete | clear | equals -->
+						<div id="actionBtnCont"></div>
+					</div>
+
+					<!-- OPERATORS: -->
+					<div class="rightCont">
+						<div id="opBtnCont"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/7daaaf94bb.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/buttons.js"></script>
+	</body>
+</html>
