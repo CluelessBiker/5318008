@@ -227,7 +227,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	 * @param {*} value
 	 */
 	const numPress = (value) => {
-		console.log(">>>NUMBERS : " + value);
 		appendNumScreen(value);
 		updateScreen();
 	};
@@ -238,7 +237,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	 * @param {*} value
 	 */
 	const operatorPress = (value) => {
-		console.log(">>>OPERATOR : " + value);
 		chooseOperation(value);
 		updateScreen();
 	};
@@ -250,15 +248,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	 */
 	const actionPress = (value) => {
 		if (value === "del") {
-			console.log("deleteing your mistakes...");
 			delNum();
 			updateScreen();
 		} else if (value === "ac") {
-			console.log("....oh no! All gone.");
 			allClear();
 			updateScreen();
 		} else {
-			console.log("calculating your future");
 			calculate();
 
 			if (currentNum.toString() === "0.7734") {
