@@ -16,9 +16,9 @@ const switchTheme = () => {
 
 	themeStyleSheet.setAttribute("href", newStyleSheet);
 
-	themeButton.innerHTML.replace = isLightTheme
+	themeButton.innerHTML = isLightTheme
 		? `<i class="fa-solid fa-sun"></i>`
-		: `<i class="fa-solid fa-moon"></i>`;
+		: `<i class="fa-solid fa-moon"></i>`
 
 	isLightTheme = !isLightTheme;
 };
